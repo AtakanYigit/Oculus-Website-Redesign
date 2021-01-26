@@ -1,0 +1,255 @@
+html {
+    scroll-behavior:    smooth;
+}
+
+*{
+    font-family:       'Sofia Pro';
+    margin:             0;
+    padding:            0;
+    overflow-x:         hidden;
+}
+
+a{
+    text-decoration:    none;
+    color:              black
+}
+
+#arrow-back{
+    position:           absolute;
+    margin-top:         48px;
+    margin-left:        48px;
+    width:              24px;
+    animation-name:     fadeinarrow;
+    animation-duration: 4s;
+}
+
+@keyframes fadeinarrow{
+    0%  {opacity:       0;}
+    75% {opacity:       0;}
+    100%{opacity:       1;}
+}
+.video{
+    position:           absolute;
+    margin-top:        -22px;
+    z-index:           -999;
+}
+
+.container{
+    margin-top:        -24px;
+    width:              50%;
+    height:             834px;
+    background:         linear-gradient(90deg ,#121212 30%, #00000000 100%);
+    overflow-y:         hidden;
+    animation:          fadein 3s;
+}
+
+@keyframes fadein{
+    0%  {opacity:       0;}
+    100%{opacity:       1;}
+}
+
+#gamelogo{
+    margin-left:        104px;
+    width:              480px;
+    margin-bottom:     -56px;
+}
+
+.headertext{
+    color:              white;
+    width:              594px;
+    text-align:         center;
+    font-size:          24px;
+    font-weight:        400;
+    margin-left:        48px;
+    padding-bottom:     16px;
+}
+
+#first{
+    margin-top:        -8px;
+}
+
+h1{
+    position:           relative; 
+    left:               0;
+    right:              0;
+    margin:             32px auto 24px;
+    width:              223px;
+    font-size:          48px;
+    font-weight:        600px;
+    color:              #121212;
+    animation:          fadein 2s;
+}
+
+.buynow{
+    position:           absolute;
+    margin-top:        -84px;
+    margin-left:       -165px;
+}
+
+
+
+div.gallery {
+    display:            inline;
+    margin-right:       38px;
+    float:              none;
+    width:              344px;
+    animation-name:     fadein;
+    animation-duration: 4s;
+}
+
+
+div.gallery img {
+    width:              321px;
+    height:             200px;
+    border-radius:      16px;
+}
+
+div.gallery img:hover {
+    box-shadow:         0px 0px 48px rgba(128, 128, 128, 0.377);
+}
+
+.pictures{
+    margin-left:        48px;
+}
+
+.picturesHeader{
+    width:              557px;
+}
+
+.includedHeader{
+    width:              265px;
+}
+
+.addOns{
+    margin-left:        48px;
+}
+
+.addon {
+    padding:            17px 0px 32px 21px;
+    margin-right:       38px;
+    width:              540px;
+    height:             250px;
+    border-radius:      16px;
+    overflow:           hidden;
+    display:            inline-block;
+    background-color:   #F1F1F1;
+}
+
+.addOnHeader{
+    width: 300px;
+}
+
+h2{
+    position:           relative;
+    display:            inline;
+    text-align:         center;
+    margin-left:        100px;
+    font-size:          32px;
+    font-weight:        600px;
+}
+
+p{
+    margin-top:         17px;
+    width:              514px;
+    text-align:         center;
+    font-size:          24px;
+    font-weight:        600px;
+}
+
+.price{
+    margin-left:        200px;
+    margin-right:       300px;
+    display:            inline;
+}
+.price3{
+    margin-left:        200px;
+    display:            inline;
+}
+
+.prices{
+    margin-top:         24px;
+    margin-left:        48px;
+}
+
+#seeall{
+    margin-top:         32px;
+    margin-left:        760px;
+}
+
+.overview{
+    position:               relative; 
+    left:                   0;
+    right:                  0;
+    margin:                 80px auto 0;
+}
+
+.grid{
+    position:               relative; 
+    left:                   0;
+    right:                  0;
+    margin:                 80px auto 0;
+    display:                grid;
+    grid-template-columns:  repeat(5,1fr) ;
+    grid-template-rows:     1fr 1fr 1fr;
+    row-gap:                128px;
+    column-gap:            -800px;
+    width:                  80vw;
+}
+
+.content{
+    font-size:              20px;
+    display:                grid;
+    align-self:             center;
+    justify-self:           center;
+    width:                  500px;
+}
+
+h3{
+    justify-self:           center;
+}
+
+.contentpara{
+    color:                  rgba(0, 0, 0, 0.5);
+    justify-self:           center;
+}
+
+footer{
+    position:               absolute;
+    background-color:       black;
+    height:                 64px;
+    width:                  100vw;
+    overflow:               hidden;
+    display:                flex;
+    justify-content:        space-around;
+    align-items:            center;
+}
+
+#fromfacebook{
+    height:                 32px;
+}
+
+#Privacy{
+    font-size:              16px;
+    font-weight:            400;
+    display:                inline;
+}
+
+#LLC{
+    font-size:              16px;
+    font-weight:            400;
+    display:                inline;
+}
+
+.footertextbox{
+    color:                  white;
+    display:                inline;
+}
+
+.socials{
+    display:                inline;
+}
+
+.socialicon{
+    height:                 32px;
+    padding-left:           44px;
+}

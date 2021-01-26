@@ -1,0 +1,241 @@
+html {
+    scroll-behavior:    smooth;
+}
+
+*{
+    font-family:        'Sofia Pro';
+    margin:             0;
+    padding:            0;
+    overflow-x:         hidden;
+}
+
+a{
+    text-decoration:    none;
+    color:              black
+}
+
+h1{
+    text-align:         center;
+    margin-top:         96px;
+    margin-bottom:      176px;
+    font-size:          64px;
+    font-weight:        600;
+}
+
+.emailArea, .passwordArea{
+    position:           absolute;
+    left:               0;
+    right:              0;
+    margin:             auto;
+    border:             5px solid black;
+    border-radius:      9px;
+    font-size:          40px;
+    font-weight:        300;
+    width:              33vw;
+    padding:            8px 24px;
+    text-decoration:    none;
+    display:            block;
+}
+
+.passwordArea{
+    margin-top:         128px;
+}
+
+#passwordforgot{
+    position:           absolute;
+    right:              33vw;
+    width:              222px;
+    margin-top:         220px;
+    text-decoration:    none;
+    opacity:            0.2;
+}
+
+#cancelbutton{
+    margin-top:         4px;
+}
+
+.container{
+    position:           absolute;
+    left:               0;
+    right:              0;
+    margin:             0 auto;
+    height:             320px;
+    width:              36.5vw;
+    margin-top:         272px;
+    overflow:           visible;
+}
+
+input[type=submit]{
+    background-color:   black;
+    color:              white;
+    cursor:             pointer;
+    border-radius:      9px;
+    padding:            8px 24px 9px;
+    font-size:          40px;
+    font-weight:        600;
+}
+.asGuest{
+    background-color:   white;
+    color:              black;
+    position:           absolute;
+    text-align:         center;
+    border:             5px solid black;
+    cursor:             pointer;
+    border-radius:      9px;
+    padding:            4px 24px 5px;
+    font-size:          40px;
+    font-weight:        600;
+    width:              354px;
+    right:              0;
+    left:               0;
+    margin:            -48px auto;
+}
+
+#Checkoutbutton{
+    position:           absolute;
+    right:              0;
+}
+
+#createaccount{
+    position:           absolute;
+    display:            block;
+    font-size:          24px;
+    font-weight:        300;
+    opacity:            0.4;
+    width:              192px;
+    right:              0;
+    left:               0;
+    margin:             32px auto;
+}
+
+p{
+    font-size:          40px;
+    font-weight:        600;
+    width:              40px;
+    height:             56px;
+    right:              0;
+    left:               0;
+    margin:             72px auto;
+}
+
+@media screen and (max-width: 1420px){
+    .emailArea, .passwordArea{
+        width:          44vw;
+    }
+
+    #passwordforgot{
+        right:          27vw;
+    }
+    
+    .container{
+        width:          48vw;
+    }
+}
+
+@media screen and (max-width: 1064px){
+    .emailArea, .passwordArea{
+        width:          60vw;
+    }
+
+    #passwordforgot{
+        right:          18vw;
+    }
+    
+    .container{
+        width:          64vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .emailArea, .passwordArea{
+        width:          70vw;
+    }
+
+    #passwordforgot{
+        right:          16vw;
+    }
+    
+    .container{
+        width:          77vw;
+    }
+}
+
+@media screen and (max-width: 660px){
+    input[type=submit] {
+        margin-top:     -2px;
+        padding:        6px 24px 12px;
+        font-size:      32px;
+    }
+
+    #cancelbutton{
+        width:          180px;
+    }
+
+    #passwordforgot{
+        right:          12vw;
+    }
+}
+
+@media screen and (max-width: 532px){
+    h1{
+        text-align:     center;
+        margin-top:     32px;
+        margin-bottom:  56px;
+        font-size:      48px;
+        font-weight:    600;
+    }
+
+    .container{
+        margin-top:     200px;
+        width:          80vw;
+    }
+    
+    .emailArea, .passwordArea{
+        width:          60vw;
+        border:         5px solid black;
+        font-size:      24px;
+        padding:        6px 16px;
+    }
+
+    .passwordArea{
+        margin-top:     80px;
+    }
+
+    #passwordforgot{
+        font-size:      20px;
+        right:          0;
+        left:           0;
+        margin:         152px auto;
+    }
+
+    #Checkoutbutton{
+        right:          0;
+        left:           0;
+        margin:         0 auto;
+        font-size:      30px;
+        width:          200px;
+    }
+
+    #cancelbutton{
+        position:       absolute;
+        right:          0;
+        left:           0;
+        margin:         80px auto;
+        width:          160px;
+    }
+
+    #createaccount{
+        margin-top:     152px;
+    }
+
+    p{
+        margin-top:     196px;
+        font-size:      32px;
+    }
+
+    .asGuest{
+        font-size:      32px;
+        width:          283px;
+        margin:        -56px auto; 
+    }
+}

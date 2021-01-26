@@ -1,0 +1,370 @@
+html {
+    scroll-behavior:    smooth;
+}
+
+*{
+    font-family:        'Sofia Pro';
+    margin:             0;
+    padding:            0;
+    overflow-x:         hidden;
+}
+
+img{
+    z-index: -5;
+}
+
+.noScroll{
+    overflow: hidden;
+}
+
+nav{
+    margin-left:        80px;
+    display:            flex;
+    align-items:        center;
+    justify-content:    space-between;
+    width:              1130px;
+    animation:          navbar   2s;
+}
+
+@keyframes navbar{
+    0%  {opacity: 0; margin-left: -5000px;}
+    50% {opacity: 0; }
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+a{
+    text-decoration:    none;
+    color:              black
+}
+
+ul{
+    display:            inline;
+    width:              1000px;
+} 
+
+#logo{
+    display:            inline;
+}
+
+li{
+    font-family:        'Sofia Pro';
+    font-weight:        900;
+    font-size:          32px;
+    display:            inline;
+    margin-right:       3.5%;
+    text-shadow:        0px 0px 12px rgba(0, 0, 0, 0);
+    transition:         text-shadow 0.1s;
+}
+
+li:hover{
+    text-shadow:        0px 0px 12px rgba(0, 225, 255, 0.301);
+}
+
+h1{
+    margin-top:         167px;
+    margin-left:        48px;
+    font-size:          88px;
+    font-weight:        900;
+    width:              813px;
+    text-align:         center;
+    animation:          header 2s;
+}
+
+@keyframes header{
+    0%  {margin-left:   -1000px;}
+    100%{margin-left:   48px;}
+}
+
+#firstparagraph{
+    font-size:          40px;
+    width:              565px;
+    text-align:         center;
+    margin-left:        153px;
+    margin-top:         8px;
+    animation:          para 2s;
+}
+
+@keyframes para{
+    0%{margin-left:     -1000px; }
+    100%{margin-left:   153px; }
+}
+
+#mainpicture{
+    z-index:            -10;
+    position:           absolute;
+    margin-left:        45vw;
+    margin-top:         -150px;
+    animation:          mainpicP1 2s;
+}
+
+nosidescroll{
+    
+    width:              10px;
+}
+
+#buynow{
+    margin-top:         40px;
+    margin-left:        157px;
+    margin-right:       59px;
+    animation:          buynow 2s;
+}
+
+@keyframes buynow{
+    0%  {margin-left:   -1000px;}
+    100%{margin-left:   157px;}
+}
+
+#arrow{
+    position:           absolute;
+    left:               0;
+    right:              0;
+    bottom:             24px;
+    margin:             0 auto;
+    animation:          arrow 2s;
+}
+
+@keyframes arrow{
+    0%  {opacity: 0;    bottom: -24px;}
+    50% {opacity: 0; }
+    100%{opacity: 1;    bottom:  24px;}
+}
+
+h2{
+    position:           absolute;
+    left:               0;
+    right:              0;
+    margin:             300px auto 0;
+    font-size:          64px;
+    text-align:         center;
+}
+
+#lens1{ 
+    position:           absolute;
+    margin-top:         -610px;
+    margin-left:        -225px;
+}
+
+#lens2{ 
+    position:           absolute;
+    margin-top:         -100px;
+    margin-left:        1600px;
+}
+
+.explain{
+    z-index: 5;
+    position:           relative;
+    margin:             450px auto 0;
+    text-align:         center;
+    width:              67vw;
+    font-size:          40px;
+    font-weight:        300px;;
+}
+
+#ergonomicimage{
+    display:            block;
+    text-align:         center;
+    margin:             80px auto;
+    width:              670px;
+}
+
+#sound1{
+    margin-top:         -520px;
+    margin-left:        -425px;
+}
+
+#sound2{
+    margin-top:         -920px;
+    margin-left:        1490px;
+}
+
+#controllerheader{
+    margin-top:         100px;
+}
+
+#controllerpara{
+    margin-top:         275px;
+}
+
+#controllerimage{
+    display:            block;
+    text-align:         center;
+    margin:             -80px auto;
+}
+
+#specsSection{
+    display:            block;
+    text-align:         center;
+    margin:             40px auto;
+}
+
+#specs{
+    margin-top:         -10px;
+}
+
+#chart{
+    user-select:        none;
+    display:            block;
+    text-align:         center;
+    margin:             150px auto;
+    width:              90vw;
+}
+
+.continue{
+    display:            block;
+    text-align:         center;
+    margin:             -50px auto 160px;
+    width:              100vw;
+    display:            flex;
+    justify-content:    space-around;
+}
+
+
+footer{
+    position:           absolute;
+    background-color:   black;
+    height:             64px;
+    width:              100vw;
+    overflow:           hidden;
+    display:            flex;
+    justify-content:    space-around;
+    align-items:        center;
+}
+
+#fromfacebook{
+    height:             32px;
+}
+
+#Privacy{
+    font-size:          16px;
+    font-weight:        400;
+    display:            inline;
+}
+
+#LLC{
+    font-size:          16px;
+    font-weight:        400;
+    display:            inline;
+}
+
+.footertextbox{
+    color:              white;
+    display:            inline;
+}
+
+.socials{
+    display:            inline;
+}
+
+.socialicon{
+    height:             32px;
+    padding-left:       44px;
+}
+
+#sound1{
+    animation:          infinite sound 4s linear;
+}
+
+#sound2{
+    animation:          infinite sound 4s linear;
+}
+
+@keyframes sound{
+    0%  {transform: scale(1,1);         opacity: 0.2;}
+    50% {transform: scale(1.01,1.01);   opacity: 1;}
+    100%{transform: scale(1,1);         opacity: 0.2;}
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1500px){
+    h1{
+        font-size:          72px;
+    }
+    #firstparagraph{
+        font-size:          32px;
+    }
+}
+
+@media screen and (max-width: 1360px){
+    #mainpicture{
+        margin-left:        50vw;
+        animation:          mainpicP2 2s;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    #mainpicture{
+        right:              0;
+        left:               0;
+        margin:             518px auto;
+        width:              750px;
+        animation:          mainpicP3 2s;
+    }
+
+    #arrow{
+        display:            none;
+    }
+
+    h1{
+        left:               0;
+        right:              0;
+        margin:             80px auto;
+        width:              813px;
+    }
+
+    #firstparagraph{
+        left:               0;
+        right:              0;
+        margin:             80px auto 32px;
+        width:              540px;
+        text-align:         center;
+    }
+
+    #buynow{
+        margin-top:         40px;
+        margin-left:        256px;
+        margin-right:       59px;
+        animation:          buynow 2s;
+    }
+
+    .infoSection{
+        margin-top:         200px;
+    }
+
+    #specs{
+        font-size:          56px;
+    }
+
+    nav{
+        position:           absolute;
+        left:               0;
+        right:              0;
+        margin:             0 auto;
+        width:              85%;
+        justify-content:    space-between;
+    }
+
+    #logo{
+        padding-right:      50px;
+    }
+    
+    li{
+        padding-right:       24px;
+    }
+
+}
+
+@keyframes mainpicP1{
+    0%  {margin-left:       4000px; }
+    100%{margin-left:       45vw; }
+}
+
+@keyframes mainpicP2{
+    0%  {margin-left:       4000px; }
+    100%{margin-left:       50vw; }
+}
+
+@keyframes mainpicP3{
+    0%  {opacity:           0;}
+    100%{opacity:           1;}
+}
